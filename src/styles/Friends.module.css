@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Lexend";
+  src: url("/Lexend.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.referral-section {
+  margin: 20px 0;
+  font-family: "Lexend", sans-serif;
+  /* color: #c1ff00; */
+
+  text-align: center;
+}
+
+.referral-link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.referral-link-container input {
+  width: 300px;
+  padding: 5px;
+  color: #c1ff00;
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.referral-link-container button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #c1ff00;
+  /* color: rgb(0, 0, 0); */
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.milestone-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.milestone-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c1ff00;
+  padding: 5px;
+  border-radius: 20px;
+  width: 300px;
+  color: #000000;
+  margin-bottom: 45px;
+}
+
+.claim-button {
+  background-color: #000000;
+  /* color: rgb(0, 0, 0); */
+  color: #c1ff00;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+.claim-button:disabled {
+  background-color: #ccc; /* Grey out the button when disabled */
+}
+/* Toast Overlay */
+.toast-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Make sure it's above other elements */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* Align the toast to the bottom */
+}
+
+/* Toast Notification */
+.toast {
+  background-color: #000000;
+  color: #c1ff00;
+  padding: 10px 20px;
+  border: 2px solid #c1ff00;
+  border-radius: 5px;
+  margin: 20px; /* Margin for spacing from the edges */
+  display: flex;
+  align-items: center;
+}
+
+.toast button {
+  background: none;
+  border: none;
+  color: #c1ff00;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

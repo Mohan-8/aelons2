@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000000; /* Light background color */
+  padding: 10px 0; /* Padding around the footer */
+  position: fixed; /* Fix the footer at the bottom */
+  bottom: 0; /* Position at the bottom of the viewport */
+  width: 100%; /* Full width */
+  border-top: 1px solid #ccc;
+  left: 0; /* Top border */
+  color: #c1ff00;
+}
+
+.footerItem {
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+    color: #c1ff00;
+ /* Dark text color */
+}
+
+.footerItem img {
+  width: 24px; /* Image width */
+  height: 24px; /* Image height */
+  display: block; /* Block level for centering */
+  margin: 0 auto; /* Center image horizontally */
+}
+
+.footerItem span {
+  display: block; /* Block display for text */
+  font-size: 12px; /* Smaller text size */
+}

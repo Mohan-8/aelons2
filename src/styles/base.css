@@ -1,0 +1,168 @@
+h1 {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  font-size: 20px;
+  color: white;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "PT Mono", serif;
+  color: #ffffff;
+  overflow: hidden;
+}
+canvas {
+  display: block;
+  background-color: #000000;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  top: 20%;
+  color: green;
+  font-size: 80px;
+}
+.pressSpace {
+  top: 35%;
+  font-size: 20px;
+  color: #ffffff;
+}
+.pressEnter {
+  top: 45%;
+  font-size: 26px;
+  color: #ffffff;
+}
+.score {
+  top: 30%;
+  font-size: 40px;
+  color: #ffffff;
+}
+.controls {
+  top: 85%;
+  font-size: 20px;
+  color: #ffffff;
+  animation: blinker 1s linear infinite;
+}
+.centerScreen {
+  text-align: center;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+/* Mobile-Friendly Adjustments */
+@media (max-width: 768px) {
+  .title {
+    font-size: 50px;
+  }
+  .pressSpace {
+    font-size: 20px;
+  }
+  .pressEnter {
+    font-size: 18px;
+  }
+  .score {
+    font-size: 30px;
+  }
+  .controls {
+    font-size: 16px;
+  }
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .title {
+    font-size: 40px;
+  }
+  .pressSpace {
+    font-size: 16px;
+  }
+  .pressEnter {
+    font-size: 14px;
+  }
+  .score {
+    font-size: 24px;
+  }
+  .controls {
+    font-size: 14px;
+  }
+  canvas {
+    width: 100%;
+    height: auto;
+  }
+}
+/* Button Design */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+button:active {
+  transform: scale(0.98); /* Slight shrink when button is clicked */
+}
+
+button:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+button:disabled {
+  background-color: #cfcfcf;
+  cursor: not-allowed;
+}
+
+/* Mobile-Friendly Button Adjustments */
+@media (max-width: 768px) {
+  button {
+    font-size: 14px; /* Smaller font size for mobile */
+    padding: 8px 16px; /* Adjust padding */
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  button {
+    font-size: 12px; /* Smaller font size for small phones */
+    padding: 6px 12px; /* Adjust padding */
+  }
+}
+/* Add this to your CSS file or in a <style jsx> block */
+
+.loadingScreen {
+  display: flex;
+  justify-content: center; /* Align horizontally */
+  align-items: center; /* Align vertically */
+  height: 100vh; /* Full viewport height */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Optional: adds a dark overlay */
+}
+
+.centerScreen {
+  font-size: 20px; /* Customize font size */
+  color: rgb(0, 0, 0); /* Optional: Customize text color */
+}

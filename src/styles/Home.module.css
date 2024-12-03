@@ -1,0 +1,200 @@
+.mobileClass {
+  text-align: center;
+}
+.progressBar {
+  appearance: none;
+  width: 100%;
+  height: 3rem;
+  border-radius: 25px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  /* Removes the grey background */
+}
+
+.progressBar::-webkit-progress-bar {
+  background-color: transparent; /* Ensures no background in WebKit browsers */
+}
+
+.progressBar::-webkit-progress-value {
+  background-color: #c1ff00; /* Your preferred progress color */
+  border-radius: 25px;
+}
+
+.progressBar::-moz-progress-bar {
+  background-color: #c1ff00; /* For Firefox */
+  border-radius: 25px;
+}
+
+.desktopClass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+}
+
+.profileImage {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.pointsDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+.logoDisplay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 10px; /* Rounded corners for the filled part */
+}
+
+.claimButton {
+  padding: 10px 20px;
+  background-color: #c1ff00;
+  color: #000000;
+  border: none;
+  border-radius: 70px;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+}
+
+.progressContainer {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+}
+
+.progressText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #000000;
+  pointer-events: none;
+  font-size: 14px;
+}
+.user_name {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* Toast Overlay */
+.toast-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Make sure it's above other elements */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* Align the toast to the bottom */
+}
+
+/* Toast Notification */
+.toast {
+  background-color: #000000;
+  color: #c1ff00;
+  padding: 10px 20px;
+  border: 2px solid #c1ff00;
+  border-radius: 5px;
+  margin: 20px; /* Margin for spacing from the edges */
+  display: flex;
+  align-items: center;
+}
+
+.toast button {
+  background: none;
+  border: none;
+  color: #c1ff00;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* overlay*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.overlayContent {
+  background-color: #000000;
+  color: #c1ff00;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px #c1ff00, 0 6px 20px #c1ff00;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.instructions {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.instructions h2 {
+  margin-bottom: 10px;
+}
+
+.instructions ol {
+  padding-left: 20px;
+  text-align: left;
+}

@@ -1,0 +1,18 @@
+{
+  "rewrites": [
+    {
+      "source": "/old-path",
+      "destination": "/new-path"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/old-home",
+      "destination": "/new-home",
+      "permanent": true
+    }
+  ],
+  "env": {
+    "MY_ENV_VARIABLE": "my-value"
+  }
+}

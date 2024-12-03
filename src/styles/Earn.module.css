@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Lexend";
+  src: url("/Lexend.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.earn-container {
+  font-family: "Lexend", sans-serif;
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-profile {
+  margin-right: 10px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.streak-section {
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 2rem;
+}
+
+.streak-details {
+  font-size: 18px;
+  margin: 10px 0;
+  margin-bottom: 2rem;
+}
+
+.streak-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Adds space between items */
+  justify-content: center;
+  margin: 10px 0;
+  margin-bottom: 3rem;
+}
+
+.streak-day {
+  flex-basis: 25%;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  background-color: #e0e0e0;
+  border-radius: 168%;
+  border: 2px solid #c1ff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: black;
+  transition: background-color 0.3s;
+}
+
+.streak-day.filled {
+  background-color: #c1ff00;
+  font-weight: bold;
+  color: black;
+}
+
+.claim-button {
+  padding: 10px 20px;
+  background-color: #c1ff00;
+  border: none;
+  border-radius: 70px;
+  cursor: pointer;
+  margin-top: 20px;
+  color: black;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.claim-button:hover:not(.disabled) {
+  background-color: #c1ff00;
+  color: #000;
+}
+
+.claim-button.disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.message {
+  font-size: medium;
+  margin: 10px 0;
+}
+
+.back-icon {
+  cursor: pointer;
+}
+/* Toast Overlay */
+.toast-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Make sure it's above other elements */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* Align the toast to the bottom */
+}
+
+/* Toast Notification */
+.toast {
+  background-color: #000000;
+  color: #c1ff00;
+  padding: 10px 20px;
+  border: 2px solid #c1ff00;
+  border-radius: 5px;
+  margin: 20px; /* Margin for spacing from the edges */
+  display: flex;
+  align-items: center;
+}
+
+.toast button {
+  background: none;
+  border: none;
+  color: #c1ff00;
+  margin-left: 10px;
+  cursor: pointer;
+}
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

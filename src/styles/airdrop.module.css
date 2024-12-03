@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Lexend";
+  src: url("/Lexend.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.airdropContainer {
+  font-family: "Lexend", sans-serif;
+  color: #000000;
+  padding: 20px;
+  margin-bottom: 3rem;
+}
+
+.backIcon {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.buttonBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #c1ff00;
+  padding: 10px;
+  border-radius: 10px;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.label {
+  font-weight: bold;
+  /* flex: 1;  */
+  text-align: left;
+}
+
+.walletButton,
+.socialButton {
+  padding: 10px 20px;
+  color: #c1ff00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  /* flex: 1; */
+  text-align: center;
+  background-color: #000000;
+}
+
+/* Individual button styles */
+.raydiumButton {
+  background-color: #000000;
+}
+
+.telegramButton {
+  background-color: #000000;
+}
+
+.twitterButton {
+  background-color: #000000;
+}
+
+.websiteButton {
+  background-color: #000000;
+}
+/* Toast Overlay */
+.toast-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Make sure it's above other elements */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  /* Align the toast to the bottom */
+}
+
+/* Toast Notification */
+.toast {
+  background-color: #000000;
+  color: #c1ff00;
+  padding: 10px 20px;
+  border: 2px solid #c1ff00;
+  border-radius: 5px;
+  margin: 20px; /* Margin for spacing from the edges */
+  display: flex;
+  align-items: center;
+}
+
+.toast button {
+  background: none;
+  border: none;
+  color: #c1ff00;
+  margin-left: 10px;
+  cursor: pointer;
+}
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+/* input */
+.inputBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #c1ff00;
+  color: #c1ff00;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: #121212;
+  width: 90%;
+  max-width: 400px;
+  margin: 10px 0;
+  outline: none;
+}
+
+.inputBox input {
+  flex: 1;
+  padding: 8px 12px;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  outline: none;
+}
+/* 
+.inputBox input:focus {
+  border: 1px solid #ffdf00;
+} */
+
+.inputBox button {
+  background-color: #c1ff00;
+  color: #121212;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.inputBox button:hover {
+  background-color: #a2e000;
+}
+
+.solanaAddress {
+  color: #c1ff00;
+}
