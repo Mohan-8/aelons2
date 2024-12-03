@@ -41,7 +41,7 @@ const Footer = ({ userId }) => {
             return 0;
           }
         });
-      }, 1000); 
+      }, 1000);
       return () => clearInterval(intervalId);
     }
   }, [canStartGame, remainingTime]);

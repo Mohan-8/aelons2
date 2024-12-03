@@ -17,6 +17,7 @@ const GameState = {
   Playing: 1,
   GameOver: 2,
 };
+
 class App extends Component {
   constructor() {
     super();
@@ -32,6 +33,9 @@ class App extends Component {
       previousState: GameState.StartScreen,
       context: null,
     };
+
+    // Creating a ref for the canvas
+    this.canvasRef = React.createRef();
 
     this.ship = null;
     this.invaders = [];
@@ -213,7 +217,9 @@ class App extends Component {
   componentDidMount() {
     window.addEventListener("resize", this.handleResize.bind(this));
     this.state.input.bindKeys();
-    const context = this.refs.canvas.getContext("2d");
+
+    // Using the canvasRef here instead of this.refs.canvas
+    const context = this.canvasRef.current.getContext("2d");
     this.setState({ context: context });
 
     requestAnimationFrame(() => {
@@ -269,7 +275,7 @@ class App extends Component {
 
         {/* Canvas for the game */}
         <canvas
-          ref="canvas"
+          ref={this.canvasRef} // Using the ref created in constructor
           width={this.state.screen.width * this.state.screen.ratio}
           height={this.state.screen.height * this.state.screen.ratio}
         />

@@ -249,8 +249,8 @@ const Home = () => {
   };
 
   return (
-    <div className={!isMobile ? "mobile-class" : "desktop-class"}>
-      {!isMobile ? (
+    <div className={isMobile ? "mobile-class" : "desktop-class"}>
+      {isMobile ? (
         <div style={{ textAlign: "center" }}>
           <p>Please scan the QR code to continue:</p>
           <Image src="/qr-image.png" alt="QR Code" width={200} height={200} />
