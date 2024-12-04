@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import InputManager from "@/components/InputManager";
 // print the information
 import GameOverScreen from "@/components/ReactComponents/GameOverScreen";
-import ControlOverlay from "@/components/ReactComponents/ControlOverlay";
 // ship and invaders
 import Ship from "@/components/GameComponents/Ship";
 import Invader from "@/components/GameComponents/Invader";
@@ -268,7 +267,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        {this.showControls && <ControlOverlay />}
         {this.state.gameState === GameState.GameOver && (
           <GameOverScreen score={this.state.score} />
         )}

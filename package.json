@@ -10,12 +10,20 @@
     "obfuscate": "javascript-obfuscator src --output obfuscated"
   },
   "dependencies": {
+    "@solana/web3.js": "^1.95.8",
+    "@tonconnect/sdk": "^3.0.5",
+    "@tonconnect/ui": "^2.0.9",
+    "@tonconnect/ui-react": "^2.0.9",
     "axios": "^1.7.7",
     "crypto-js": "^4.2.0",
+    "expo-web-browser": "^14.0.1",
     "next": "14.2.15",
     "react": "^18",
     "react-dom": "^18",
-    "react-toastify": "^10.0.6"
+    "react-toastify": "^10.0.6",
+    "sass": "^1.82.0",
+    "ton": "^13.9.0",
+    "tonweb": "^0.0.66"
   },
   "devDependencies": {
     "@types/eslint-scope": "^3.7.7",
