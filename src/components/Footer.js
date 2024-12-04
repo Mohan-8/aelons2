@@ -16,7 +16,7 @@ const Footer = ({ userId }) => {
         const data = await response; // Make sure response is parsed to JSON
         if (response) {
           setCanStartGame(data.canStartGame);
-          setRemainingTime(data.remainingTime * 60); // Convert minutes to seconds
+          setRemainingTime(data.remainingTime); // Convert minutes to seconds
         } else {
           console.error("Error fetching game status:", data);
         }
